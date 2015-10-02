@@ -28,7 +28,34 @@
         /// </summary>
         private void InitializeComponent()
         {
-            this.tabMain = new System.Windows.Forms.TabControl();
+            this.tabAbout = new System.Windows.Forms.TabPage();
+            this.tabGraphics = new System.Windows.Forms.TabPage();
+            this.RAM = new System.Windows.Forms.GroupBox();
+            this.txtRamAvai = new System.Windows.Forms.TextBox();
+            this.label13 = new System.Windows.Forms.Label();
+            this.txtRam = new System.Windows.Forms.TextBox();
+            this.labelRam = new System.Windows.Forms.Label();
+            this.groupMemory = new System.Windows.Forms.GroupBox();
+            this.label12 = new System.Windows.Forms.Label();
+            this.txtSpeed = new System.Windows.Forms.TextBox();
+            this.label2 = new System.Windows.Forms.Label();
+            this.txtDisksize = new System.Windows.Forms.TextBox();
+            this.tabMainBoard = new System.Windows.Forms.TabPage();
+            this.groupBIOS = new System.Windows.Forms.GroupBox();
+            this.txtMinor = new System.Windows.Forms.TextBox();
+            this.txtMajor = new System.Windows.Forms.TextBox();
+            this.label11 = new System.Windows.Forms.Label();
+            this.label10 = new System.Windows.Forms.Label();
+            this.txtVersionBIOS = new System.Windows.Forms.TextBox();
+            this.label9 = new System.Windows.Forms.Label();
+            this.txtManuBIOS = new System.Windows.Forms.TextBox();
+            this.label8 = new System.Windows.Forms.Label();
+            this.groupBaseBoard = new System.Windows.Forms.GroupBox();
+            this.txtVersionBase = new System.Windows.Forms.TextBox();
+            this.label7 = new System.Windows.Forms.Label();
+            this.txtModel = new System.Windows.Forms.TextBox();
+            this.txtManufacturer = new System.Windows.Forms.TextBox();
+            this.label4 = new System.Windows.Forms.Label();
             this.tabCPU = new System.Windows.Forms.TabPage();
             this.groupProcessor = new System.Windows.Forms.GroupBox();
             this.txtAssetTag = new System.Windows.Forms.TextBox();
@@ -52,295 +79,149 @@
             this.txtName = new System.Windows.Forms.TextBox();
             this.labelName = new System.Windows.Forms.Label();
             this.imageCPU = new System.Windows.Forms.PictureBox();
-            this.tabMainBoard = new System.Windows.Forms.TabPage();
-            this.groupBIOS = new System.Windows.Forms.GroupBox();
-            this.txtMinor = new System.Windows.Forms.TextBox();
-            this.txtMajor = new System.Windows.Forms.TextBox();
-            this.label11 = new System.Windows.Forms.Label();
-            this.label10 = new System.Windows.Forms.Label();
-            this.txtVersionBIOS = new System.Windows.Forms.TextBox();
-            this.label9 = new System.Windows.Forms.Label();
-            this.txtManuBIOS = new System.Windows.Forms.TextBox();
-            this.label8 = new System.Windows.Forms.Label();
-            this.groupBaseBoard = new System.Windows.Forms.GroupBox();
-            this.txtVersionBase = new System.Windows.Forms.TextBox();
-            this.label7 = new System.Windows.Forms.Label();
-            this.txtModel = new System.Windows.Forms.TextBox();
-            this.txtManufacturer = new System.Windows.Forms.TextBox();
-            this.label4 = new System.Windows.Forms.Label();
-            this.tabGraphics = new System.Windows.Forms.TabPage();
-            this.groupMemory = new System.Windows.Forms.GroupBox();
-            this.label2 = new System.Windows.Forms.Label();
-            this.txtCPUUsage = new System.Windows.Forms.TextBox();
-            this.tabUser = new System.Windows.Forms.TabPage();
-            this.tabDataStorage = new System.Windows.Forms.TabPage();
-            this.tabNetwork = new System.Windows.Forms.TabPage();
-            this.tabAbout = new System.Windows.Forms.TabPage();
-            this.label6 = new System.Windows.Forms.Label();
+            this.tabMain = new System.Windows.Forms.TabControl();
             this.label5 = new System.Windows.Forms.Label();
-            this.tabMain.SuspendLayout();
-            this.tabCPU.SuspendLayout();
-            this.groupProcessor.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.imageCPU)).BeginInit();
+            this.label6 = new System.Windows.Forms.Label();
+            this.label14 = new System.Windows.Forms.Label();
+            this.tabAbout.SuspendLayout();
+            this.tabGraphics.SuspendLayout();
+            this.RAM.SuspendLayout();
+            this.groupMemory.SuspendLayout();
             this.tabMainBoard.SuspendLayout();
             this.groupBIOS.SuspendLayout();
             this.groupBaseBoard.SuspendLayout();
-            this.tabGraphics.SuspendLayout();
-            this.groupMemory.SuspendLayout();
-            this.tabAbout.SuspendLayout();
+            this.tabCPU.SuspendLayout();
+            this.groupProcessor.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.imageCPU)).BeginInit();
+            this.tabMain.SuspendLayout();
             this.SuspendLayout();
             // 
-            // tabMain
+            // tabAbout
             // 
-            this.tabMain.Controls.Add(this.tabCPU);
-            this.tabMain.Controls.Add(this.tabMainBoard);
-            this.tabMain.Controls.Add(this.tabGraphics);
-            this.tabMain.Controls.Add(this.tabUser);
-            this.tabMain.Controls.Add(this.tabDataStorage);
-            this.tabMain.Controls.Add(this.tabNetwork);
-            this.tabMain.Controls.Add(this.tabAbout);
-            this.tabMain.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.tabMain.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.tabMain.Location = new System.Drawing.Point(0, 0);
-            this.tabMain.Name = "tabMain";
-            this.tabMain.SelectedIndex = 0;
-            this.tabMain.Size = new System.Drawing.Size(421, 252);
-            this.tabMain.TabIndex = 0;
+            this.tabAbout.Controls.Add(this.label14);
+            this.tabAbout.Controls.Add(this.label6);
+            this.tabAbout.Controls.Add(this.label5);
+            this.tabAbout.Location = new System.Drawing.Point(4, 22);
+            this.tabAbout.Name = "tabAbout";
+            this.tabAbout.Padding = new System.Windows.Forms.Padding(3);
+            this.tabAbout.Size = new System.Drawing.Size(413, 226);
+            this.tabAbout.TabIndex = 6;
+            this.tabAbout.Text = "About";
+            this.tabAbout.UseVisualStyleBackColor = true;
             // 
-            // tabCPU
+            // tabGraphics
             // 
-            this.tabCPU.Controls.Add(this.groupProcessor);
-            this.tabCPU.Location = new System.Drawing.Point(4, 22);
-            this.tabCPU.Name = "tabCPU";
-            this.tabCPU.Padding = new System.Windows.Forms.Padding(3);
-            this.tabCPU.Size = new System.Drawing.Size(413, 226);
-            this.tabCPU.TabIndex = 0;
-            this.tabCPU.Text = "CPU";
-            this.tabCPU.UseVisualStyleBackColor = true;
+            this.tabGraphics.Controls.Add(this.RAM);
+            this.tabGraphics.Controls.Add(this.groupMemory);
+            this.tabGraphics.Location = new System.Drawing.Point(4, 22);
+            this.tabGraphics.Name = "tabGraphics";
+            this.tabGraphics.Padding = new System.Windows.Forms.Padding(3);
+            this.tabGraphics.Size = new System.Drawing.Size(413, 226);
+            this.tabGraphics.TabIndex = 2;
+            this.tabGraphics.Text = "Memory";
+            this.tabGraphics.UseVisualStyleBackColor = true;
             // 
-            // groupProcessor
+            // RAM
             // 
-            this.groupProcessor.Controls.Add(this.txtAssetTag);
-            this.groupProcessor.Controls.Add(this.labelAssetTag);
-            this.groupProcessor.Controls.Add(this.txtRevision);
-            this.groupProcessor.Controls.Add(this.txtLevel);
-            this.groupProcessor.Controls.Add(this.txtThreadCount);
-            this.groupProcessor.Controls.Add(this.txtDataWidth);
-            this.groupProcessor.Controls.Add(this.labelThread);
-            this.groupProcessor.Controls.Add(this.label3);
-            this.groupProcessor.Controls.Add(this.labelDataWidth);
-            this.groupProcessor.Controls.Add(this.label1);
-            this.groupProcessor.Controls.Add(this.txtExtClock);
-            this.groupProcessor.Controls.Add(this.labelExtClock);
-            this.groupProcessor.Controls.Add(this.txtSysName);
-            this.groupProcessor.Controls.Add(this.la);
-            this.groupProcessor.Controls.Add(this.txtFamily);
-            this.groupProcessor.Controls.Add(this.txtCaption);
-            this.groupProcessor.Controls.Add(this.labelFamily);
-            this.groupProcessor.Controls.Add(this.labelCaption);
-            this.groupProcessor.Controls.Add(this.txtName);
-            this.groupProcessor.Controls.Add(this.labelName);
-            this.groupProcessor.Controls.Add(this.imageCPU);
-            this.groupProcessor.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.groupProcessor.Location = new System.Drawing.Point(3, 3);
-            this.groupProcessor.Name = "groupProcessor";
-            this.groupProcessor.Size = new System.Drawing.Size(407, 220);
-            this.groupProcessor.TabIndex = 0;
-            this.groupProcessor.TabStop = false;
+            this.RAM.Controls.Add(this.txtRamAvai);
+            this.RAM.Controls.Add(this.label13);
+            this.RAM.Controls.Add(this.txtRam);
+            this.RAM.Controls.Add(this.labelRam);
+            this.RAM.Dock = System.Windows.Forms.DockStyle.Bottom;
+            this.RAM.Location = new System.Drawing.Point(3, 111);
+            this.RAM.Name = "RAM";
+            this.RAM.Size = new System.Drawing.Size(407, 112);
+            this.RAM.TabIndex = 1;
+            this.RAM.TabStop = false;
+            this.RAM.Text = "RAM";
             // 
-            // txtAssetTag
+            // txtRamAvai
             // 
-            this.txtAssetTag.Location = new System.Drawing.Point(213, 112);
-            this.txtAssetTag.Name = "txtAssetTag";
-            this.txtAssetTag.Size = new System.Drawing.Size(66, 20);
-            this.txtAssetTag.TabIndex = 20;
+            this.txtRamAvai.Cursor = System.Windows.Forms.Cursors.Default;
+            this.txtRamAvai.Location = new System.Drawing.Point(93, 70);
+            this.txtRamAvai.Name = "txtRamAvai";
+            this.txtRamAvai.Size = new System.Drawing.Size(263, 20);
+            this.txtRamAvai.TabIndex = 11;
             // 
-            // labelAssetTag
+            // label13
             // 
-            this.labelAssetTag.BackColor = System.Drawing.Color.Transparent;
-            this.labelAssetTag.ImageAlign = System.Drawing.ContentAlignment.MiddleRight;
-            this.labelAssetTag.Location = new System.Drawing.Point(152, 109);
-            this.labelAssetTag.Name = "labelAssetTag";
-            this.labelAssetTag.Size = new System.Drawing.Size(55, 23);
-            this.labelAssetTag.TabIndex = 19;
-            this.labelAssetTag.Text = "AssetTag";
-            this.labelAssetTag.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            this.label13.BackColor = System.Drawing.Color.Transparent;
+            this.label13.Location = new System.Drawing.Point(3, 70);
+            this.label13.Name = "label13";
+            this.label13.Size = new System.Drawing.Size(85, 21);
+            this.label13.TabIndex = 10;
+            this.label13.Text = "Ram Available";
+            this.label13.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
             // 
-            // txtRevision
+            // txtRam
             // 
-            this.txtRevision.Location = new System.Drawing.Point(269, 174);
-            this.txtRevision.Name = "txtRevision";
-            this.txtRevision.Size = new System.Drawing.Size(130, 20);
-            this.txtRevision.TabIndex = 18;
+            this.txtRam.Cursor = System.Windows.Forms.Cursors.Default;
+            this.txtRam.Location = new System.Drawing.Point(93, 27);
+            this.txtRam.Name = "txtRam";
+            this.txtRam.Size = new System.Drawing.Size(263, 20);
+            this.txtRam.TabIndex = 5;
+            this.txtRam.TextChanged += new System.EventHandler(this.DisplayRam);
             // 
-            // txtLevel
+            // labelRam
             // 
-            this.txtLevel.Location = new System.Drawing.Point(193, 51);
-            this.txtLevel.Name = "txtLevel";
-            this.txtLevel.Size = new System.Drawing.Size(86, 20);
-            this.txtLevel.TabIndex = 17;
+            this.labelRam.BackColor = System.Drawing.Color.Transparent;
+            this.labelRam.Location = new System.Drawing.Point(0, 26);
+            this.labelRam.Name = "labelRam";
+            this.labelRam.Size = new System.Drawing.Size(85, 21);
+            this.labelRam.TabIndex = 4;
+            this.labelRam.Text = "RAM";
+            this.labelRam.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
             // 
-            // txtThreadCount
+            // groupMemory
             // 
-            this.txtThreadCount.Location = new System.Drawing.Point(77, 145);
-            this.txtThreadCount.Name = "txtThreadCount";
-            this.txtThreadCount.Size = new System.Drawing.Size(120, 20);
-            this.txtThreadCount.TabIndex = 16;
+            this.groupMemory.Controls.Add(this.label12);
+            this.groupMemory.Controls.Add(this.txtSpeed);
+            this.groupMemory.Controls.Add(this.label2);
+            this.groupMemory.Controls.Add(this.txtDisksize);
+            this.groupMemory.Dock = System.Windows.Forms.DockStyle.Top;
+            this.groupMemory.Location = new System.Drawing.Point(3, 3);
+            this.groupMemory.Name = "groupMemory";
+            this.groupMemory.Size = new System.Drawing.Size(407, 109);
+            this.groupMemory.TabIndex = 0;
+            this.groupMemory.TabStop = false;
+            this.groupMemory.Text = "Disk ";
             // 
-            // txtDataWidth
+            // label12
             // 
-            this.txtDataWidth.Location = new System.Drawing.Point(271, 145);
-            this.txtDataWidth.Name = "txtDataWidth";
-            this.txtDataWidth.Size = new System.Drawing.Size(128, 20);
-            this.txtDataWidth.TabIndex = 15;
+            this.label12.BackColor = System.Drawing.Color.Transparent;
+            this.label12.Location = new System.Drawing.Point(3, 56);
+            this.label12.Name = "label12";
+            this.label12.Size = new System.Drawing.Size(85, 21);
+            this.label12.TabIndex = 9;
+            this.label12.Text = "CPU Speed ";
+            this.label12.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
             // 
-            // labelThread
+            // txtSpeed
             // 
-            this.labelThread.BackColor = System.Drawing.Color.Transparent;
-            this.labelThread.ImageAlign = System.Drawing.ContentAlignment.MiddleRight;
-            this.labelThread.Location = new System.Drawing.Point(6, 143);
-            this.labelThread.Name = "labelThread";
-            this.labelThread.Size = new System.Drawing.Size(75, 23);
-            this.labelThread.TabIndex = 14;
-            this.labelThread.Text = "ThreadCount";
-            this.labelThread.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            this.txtSpeed.Cursor = System.Windows.Forms.Cursors.Default;
+            this.txtSpeed.Location = new System.Drawing.Point(93, 57);
+            this.txtSpeed.Name = "txtSpeed";
+            this.txtSpeed.Size = new System.Drawing.Size(267, 20);
+            this.txtSpeed.TabIndex = 8;
             // 
-            // label3
+            // label2
             // 
-            this.label3.BackColor = System.Drawing.Color.Transparent;
-            this.label3.ImageAlign = System.Drawing.ContentAlignment.MiddleRight;
-            this.label3.Location = new System.Drawing.Point(145, 48);
-            this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(42, 23);
-            this.label3.TabIndex = 13;
-            this.label3.Text = "Level";
-            this.label3.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            this.label2.BackColor = System.Drawing.Color.Transparent;
+            this.label2.Location = new System.Drawing.Point(3, 19);
+            this.label2.Name = "label2";
+            this.label2.Size = new System.Drawing.Size(85, 21);
+            this.label2.TabIndex = 7;
+            this.label2.Text = "Disk Size ";
+            this.label2.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
             // 
-            // labelDataWidth
+            // txtDisksize
             // 
-            this.labelDataWidth.BackColor = System.Drawing.Color.Transparent;
-            this.labelDataWidth.ImageAlign = System.Drawing.ContentAlignment.MiddleRight;
-            this.labelDataWidth.Location = new System.Drawing.Point(205, 145);
-            this.labelDataWidth.Name = "labelDataWidth";
-            this.labelDataWidth.Size = new System.Drawing.Size(60, 23);
-            this.labelDataWidth.TabIndex = 12;
-            this.labelDataWidth.Text = "DataWidth";
-            this.labelDataWidth.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
-            // 
-            // label1
-            // 
-            this.label1.BackColor = System.Drawing.Color.Transparent;
-            this.label1.ImageAlign = System.Drawing.ContentAlignment.MiddleRight;
-            this.label1.Location = new System.Drawing.Point(203, 172);
-            this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(60, 23);
-            this.label1.TabIndex = 11;
-            this.label1.Text = "Revision";
-            this.label1.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
-            // 
-            // txtExtClock
-            // 
-            this.txtExtClock.Location = new System.Drawing.Point(77, 113);
-            this.txtExtClock.Name = "txtExtClock";
-            this.txtExtClock.Size = new System.Drawing.Size(69, 20);
-            this.txtExtClock.TabIndex = 10;
-            // 
-            // labelExtClock
-            // 
-            this.labelExtClock.BackColor = System.Drawing.Color.Transparent;
-            this.labelExtClock.ImageAlign = System.Drawing.ContentAlignment.MiddleRight;
-            this.labelExtClock.Location = new System.Drawing.Point(16, 110);
-            this.labelExtClock.Name = "labelExtClock";
-            this.labelExtClock.Size = new System.Drawing.Size(55, 23);
-            this.labelExtClock.TabIndex = 9;
-            this.labelExtClock.Text = "ExtClock";
-            this.labelExtClock.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
-            // 
-            // txtSysName
-            // 
-            this.txtSysName.Location = new System.Drawing.Point(77, 175);
-            this.txtSysName.Name = "txtSysName";
-            this.txtSysName.Size = new System.Drawing.Size(120, 20);
-            this.txtSysName.TabIndex = 8;
-            // 
-            // la
-            // 
-            this.la.BackColor = System.Drawing.Color.Transparent;
-            this.la.ImageAlign = System.Drawing.ContentAlignment.MiddleRight;
-            this.la.Location = new System.Drawing.Point(9, 170);
-            this.la.Name = "la";
-            this.la.Size = new System.Drawing.Size(72, 24);
-            this.la.TabIndex = 7;
-            this.la.Text = "SystemName";
-            this.la.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
-            // 
-            // txtFamily
-            // 
-            this.txtFamily.Location = new System.Drawing.Point(77, 52);
-            this.txtFamily.Name = "txtFamily";
-            this.txtFamily.Size = new System.Drawing.Size(62, 20);
-            this.txtFamily.TabIndex = 6;
-            // 
-            // txtCaption
-            // 
-            this.txtCaption.Location = new System.Drawing.Point(77, 82);
-            this.txtCaption.Name = "txtCaption";
-            this.txtCaption.Size = new System.Drawing.Size(202, 20);
-            this.txtCaption.TabIndex = 5;
-            // 
-            // labelFamily
-            // 
-            this.labelFamily.BackColor = System.Drawing.Color.Transparent;
-            this.labelFamily.ImageAlign = System.Drawing.ContentAlignment.MiddleRight;
-            this.labelFamily.Location = new System.Drawing.Point(35, 49);
-            this.labelFamily.Name = "labelFamily";
-            this.labelFamily.Size = new System.Drawing.Size(36, 23);
-            this.labelFamily.TabIndex = 4;
-            this.labelFamily.Text = "Family";
-            this.labelFamily.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
-            // 
-            // labelCaption
-            // 
-            this.labelCaption.BackColor = System.Drawing.Color.Transparent;
-            this.labelCaption.ImageAlign = System.Drawing.ContentAlignment.MiddleRight;
-            this.labelCaption.Location = new System.Drawing.Point(16, 82);
-            this.labelCaption.Name = "labelCaption";
-            this.labelCaption.Size = new System.Drawing.Size(55, 23);
-            this.labelCaption.TabIndex = 3;
-            this.labelCaption.Text = "Caption";
-            this.labelCaption.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
-            // 
-            // txtName
-            // 
-            this.txtName.Cursor = System.Windows.Forms.Cursors.Default;
-            this.txtName.Location = new System.Drawing.Point(77, 21);
-            this.txtName.Name = "txtName";
-            this.txtName.Size = new System.Drawing.Size(202, 20);
-            this.txtName.TabIndex = 2;
-            this.txtName.TextChanged += new System.EventHandler(this.infoCPU);
-            // 
-            // labelName
-            // 
-            this.labelName.BackColor = System.Drawing.Color.Transparent;
-            this.labelName.ImageAlign = System.Drawing.ContentAlignment.MiddleRight;
-            this.labelName.Location = new System.Drawing.Point(35, 20);
-            this.labelName.Name = "labelName";
-            this.labelName.Size = new System.Drawing.Size(36, 21);
-            this.labelName.TabIndex = 1;
-            this.labelName.Text = "Name";
-            this.labelName.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
-            // 
-            // imageCPU
-            // 
-            this.imageCPU.ErrorImage = null;
-            this.imageCPU.InitialImage = null;
-            this.imageCPU.Location = new System.Drawing.Point(285, 22);
-            this.imageCPU.Name = "imageCPU";
-            this.imageCPU.Size = new System.Drawing.Size(114, 111);
-            this.imageCPU.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
-            this.imageCPU.TabIndex = 0;
-            this.imageCPU.TabStop = false;
-            this.imageCPU.WaitOnLoad = true;
+            this.txtDisksize.Cursor = System.Windows.Forms.Cursors.Default;
+            this.txtDisksize.Location = new System.Drawing.Point(93, 19);
+            this.txtDisksize.Name = "txtDisksize";
+            this.txtDisksize.Size = new System.Drawing.Size(267, 20);
+            this.txtDisksize.TabIndex = 3;
+            this.txtDisksize.TextChanged += new System.EventHandler(this.GetDisk);
             // 
             // tabMainBoard
             // 
@@ -504,106 +385,287 @@
             this.label4.Text = "Manufacturer";
             this.label4.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
             // 
-            // tabGraphics
+            // tabCPU
             // 
-            this.tabGraphics.Controls.Add(this.groupMemory);
-            this.tabGraphics.Location = new System.Drawing.Point(4, 22);
-            this.tabGraphics.Name = "tabGraphics";
-            this.tabGraphics.Padding = new System.Windows.Forms.Padding(3);
-            this.tabGraphics.Size = new System.Drawing.Size(413, 226);
-            this.tabGraphics.TabIndex = 2;
-            this.tabGraphics.Text = "Memory";
-            this.tabGraphics.UseVisualStyleBackColor = true;
+            this.tabCPU.Controls.Add(this.groupProcessor);
+            this.tabCPU.Location = new System.Drawing.Point(4, 22);
+            this.tabCPU.Name = "tabCPU";
+            this.tabCPU.Padding = new System.Windows.Forms.Padding(3);
+            this.tabCPU.Size = new System.Drawing.Size(413, 226);
+            this.tabCPU.TabIndex = 0;
+            this.tabCPU.Text = "CPU";
+            this.tabCPU.UseVisualStyleBackColor = true;
             // 
-            // groupMemory
+            // groupProcessor
             // 
-            this.groupMemory.Controls.Add(this.label2);
-            this.groupMemory.Controls.Add(this.txtCPUUsage);
-            this.groupMemory.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.groupMemory.Location = new System.Drawing.Point(3, 3);
-            this.groupMemory.Name = "groupMemory";
-            this.groupMemory.Size = new System.Drawing.Size(407, 220);
-            this.groupMemory.TabIndex = 0;
-            this.groupMemory.TabStop = false;
+            this.groupProcessor.Controls.Add(this.txtAssetTag);
+            this.groupProcessor.Controls.Add(this.labelAssetTag);
+            this.groupProcessor.Controls.Add(this.txtRevision);
+            this.groupProcessor.Controls.Add(this.txtLevel);
+            this.groupProcessor.Controls.Add(this.txtThreadCount);
+            this.groupProcessor.Controls.Add(this.txtDataWidth);
+            this.groupProcessor.Controls.Add(this.labelThread);
+            this.groupProcessor.Controls.Add(this.label3);
+            this.groupProcessor.Controls.Add(this.labelDataWidth);
+            this.groupProcessor.Controls.Add(this.label1);
+            this.groupProcessor.Controls.Add(this.txtExtClock);
+            this.groupProcessor.Controls.Add(this.labelExtClock);
+            this.groupProcessor.Controls.Add(this.txtSysName);
+            this.groupProcessor.Controls.Add(this.la);
+            this.groupProcessor.Controls.Add(this.txtFamily);
+            this.groupProcessor.Controls.Add(this.txtCaption);
+            this.groupProcessor.Controls.Add(this.labelFamily);
+            this.groupProcessor.Controls.Add(this.labelCaption);
+            this.groupProcessor.Controls.Add(this.txtName);
+            this.groupProcessor.Controls.Add(this.labelName);
+            this.groupProcessor.Controls.Add(this.imageCPU);
+            this.groupProcessor.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.groupProcessor.Location = new System.Drawing.Point(3, 3);
+            this.groupProcessor.Name = "groupProcessor";
+            this.groupProcessor.Size = new System.Drawing.Size(407, 220);
+            this.groupProcessor.TabIndex = 0;
+            this.groupProcessor.TabStop = false;
             // 
-            // label2
+            // txtAssetTag
             // 
-            this.label2.BackColor = System.Drawing.Color.Transparent;
-            this.label2.Location = new System.Drawing.Point(3, 19);
-            this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(85, 21);
-            this.label2.TabIndex = 7;
-            this.label2.Text = "Model";
-            this.label2.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
+            this.txtAssetTag.Location = new System.Drawing.Point(213, 112);
+            this.txtAssetTag.Name = "txtAssetTag";
+            this.txtAssetTag.Size = new System.Drawing.Size(66, 20);
+            this.txtAssetTag.TabIndex = 20;
             // 
-            // txtCPUUsage
+            // labelAssetTag
             // 
-            this.txtCPUUsage.Cursor = System.Windows.Forms.Cursors.Default;
-            this.txtCPUUsage.Location = new System.Drawing.Point(93, 19);
-            this.txtCPUUsage.Name = "txtCPUUsage";
-            this.txtCPUUsage.Size = new System.Drawing.Size(267, 20);
-            this.txtCPUUsage.TabIndex = 3;
-            this.txtCPUUsage.TextChanged += new System.EventHandler(this.infoMemory);
+            this.labelAssetTag.BackColor = System.Drawing.Color.Transparent;
+            this.labelAssetTag.ImageAlign = System.Drawing.ContentAlignment.MiddleRight;
+            this.labelAssetTag.Location = new System.Drawing.Point(152, 109);
+            this.labelAssetTag.Name = "labelAssetTag";
+            this.labelAssetTag.Size = new System.Drawing.Size(55, 23);
+            this.labelAssetTag.TabIndex = 19;
+            this.labelAssetTag.Text = "AssetTag";
+            this.labelAssetTag.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
-            // tabUser
+            // txtRevision
             // 
-            this.tabUser.Location = new System.Drawing.Point(4, 22);
-            this.tabUser.Name = "tabUser";
-            this.tabUser.Padding = new System.Windows.Forms.Padding(3);
-            this.tabUser.Size = new System.Drawing.Size(413, 226);
-            this.tabUser.TabIndex = 3;
-            this.tabUser.Text = "User";
-            this.tabUser.UseVisualStyleBackColor = true;
+            this.txtRevision.Location = new System.Drawing.Point(269, 174);
+            this.txtRevision.Name = "txtRevision";
+            this.txtRevision.Size = new System.Drawing.Size(130, 20);
+            this.txtRevision.TabIndex = 18;
             // 
-            // tabDataStorage
+            // txtLevel
             // 
-            this.tabDataStorage.Location = new System.Drawing.Point(4, 22);
-            this.tabDataStorage.Name = "tabDataStorage";
-            this.tabDataStorage.Padding = new System.Windows.Forms.Padding(3);
-            this.tabDataStorage.Size = new System.Drawing.Size(413, 226);
-            this.tabDataStorage.TabIndex = 4;
-            this.tabDataStorage.Text = "DataStorage";
-            this.tabDataStorage.UseVisualStyleBackColor = true;
+            this.txtLevel.Location = new System.Drawing.Point(193, 51);
+            this.txtLevel.Name = "txtLevel";
+            this.txtLevel.Size = new System.Drawing.Size(86, 20);
+            this.txtLevel.TabIndex = 17;
             // 
-            // tabNetwork
+            // txtThreadCount
             // 
-            this.tabNetwork.Location = new System.Drawing.Point(4, 22);
-            this.tabNetwork.Name = "tabNetwork";
-            this.tabNetwork.Padding = new System.Windows.Forms.Padding(3);
-            this.tabNetwork.Size = new System.Drawing.Size(413, 226);
-            this.tabNetwork.TabIndex = 5;
-            this.tabNetwork.Text = "Network";
-            this.tabNetwork.UseVisualStyleBackColor = true;
+            this.txtThreadCount.Location = new System.Drawing.Point(77, 145);
+            this.txtThreadCount.Name = "txtThreadCount";
+            this.txtThreadCount.Size = new System.Drawing.Size(120, 20);
+            this.txtThreadCount.TabIndex = 16;
             // 
-            // tabAbout
+            // txtDataWidth
             // 
-            this.tabAbout.Controls.Add(this.label6);
-            this.tabAbout.Controls.Add(this.label5);
-            this.tabAbout.Location = new System.Drawing.Point(4, 22);
-            this.tabAbout.Name = "tabAbout";
-            this.tabAbout.Padding = new System.Windows.Forms.Padding(3);
-            this.tabAbout.Size = new System.Drawing.Size(413, 226);
-            this.tabAbout.TabIndex = 6;
-            this.tabAbout.Text = "About";
-            this.tabAbout.UseVisualStyleBackColor = true;
+            this.txtDataWidth.Location = new System.Drawing.Point(269, 148);
+            this.txtDataWidth.Name = "txtDataWidth";
+            this.txtDataWidth.Size = new System.Drawing.Size(130, 20);
+            this.txtDataWidth.TabIndex = 15;
             // 
-            // label6
+            // labelThread
             // 
-            this.label6.AutoSize = true;
-            this.label6.Location = new System.Drawing.Point(149, 76);
-            this.label6.Name = "label6";
-            this.label6.Size = new System.Drawing.Size(140, 13);
-            this.label6.TabIndex = 1;
-            this.label6.Text = "Bui Van Trung-CNCNTT 01 ";
+            this.labelThread.BackColor = System.Drawing.Color.Transparent;
+            this.labelThread.ImageAlign = System.Drawing.ContentAlignment.MiddleRight;
+            this.labelThread.Location = new System.Drawing.Point(6, 143);
+            this.labelThread.Name = "labelThread";
+            this.labelThread.Size = new System.Drawing.Size(75, 23);
+            this.labelThread.TabIndex = 14;
+            this.labelThread.Text = "ThreadCount";
+            this.labelThread.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            // 
+            // label3
+            // 
+            this.label3.BackColor = System.Drawing.Color.Transparent;
+            this.label3.ImageAlign = System.Drawing.ContentAlignment.MiddleRight;
+            this.label3.Location = new System.Drawing.Point(145, 48);
+            this.label3.Name = "label3";
+            this.label3.Size = new System.Drawing.Size(42, 23);
+            this.label3.TabIndex = 13;
+            this.label3.Text = "Level";
+            this.label3.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            // 
+            // labelDataWidth
+            // 
+            this.labelDataWidth.BackColor = System.Drawing.Color.Transparent;
+            this.labelDataWidth.ImageAlign = System.Drawing.ContentAlignment.MiddleRight;
+            this.labelDataWidth.Location = new System.Drawing.Point(205, 145);
+            this.labelDataWidth.Name = "labelDataWidth";
+            this.labelDataWidth.Size = new System.Drawing.Size(60, 23);
+            this.labelDataWidth.TabIndex = 12;
+            this.labelDataWidth.Text = "DataWidth";
+            this.labelDataWidth.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            // 
+            // label1
+            // 
+            this.label1.BackColor = System.Drawing.Color.Transparent;
+            this.label1.ImageAlign = System.Drawing.ContentAlignment.MiddleRight;
+            this.label1.Location = new System.Drawing.Point(203, 172);
+            this.label1.Name = "label1";
+            this.label1.Size = new System.Drawing.Size(60, 23);
+            this.label1.TabIndex = 11;
+            this.label1.Text = "Revision";
+            this.label1.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            // 
+            // txtExtClock
+            // 
+            this.txtExtClock.Location = new System.Drawing.Point(77, 113);
+            this.txtExtClock.Name = "txtExtClock";
+            this.txtExtClock.Size = new System.Drawing.Size(69, 20);
+            this.txtExtClock.TabIndex = 10;
+            // 
+            // labelExtClock
+            // 
+            this.labelExtClock.BackColor = System.Drawing.Color.Transparent;
+            this.labelExtClock.ImageAlign = System.Drawing.ContentAlignment.MiddleRight;
+            this.labelExtClock.Location = new System.Drawing.Point(16, 110);
+            this.labelExtClock.Name = "labelExtClock";
+            this.labelExtClock.Size = new System.Drawing.Size(55, 23);
+            this.labelExtClock.TabIndex = 9;
+            this.labelExtClock.Text = "ExtClock";
+            this.labelExtClock.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            // 
+            // txtSysName
+            // 
+            this.txtSysName.Location = new System.Drawing.Point(77, 175);
+            this.txtSysName.Name = "txtSysName";
+            this.txtSysName.Size = new System.Drawing.Size(120, 20);
+            this.txtSysName.TabIndex = 8;
+            // 
+            // la
+            // 
+            this.la.BackColor = System.Drawing.Color.Transparent;
+            this.la.ImageAlign = System.Drawing.ContentAlignment.MiddleRight;
+            this.la.Location = new System.Drawing.Point(9, 170);
+            this.la.Name = "la";
+            this.la.Size = new System.Drawing.Size(72, 24);
+            this.la.TabIndex = 7;
+            this.la.Text = "SystemName";
+            this.la.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            // 
+            // txtFamily
+            // 
+            this.txtFamily.Location = new System.Drawing.Point(77, 52);
+            this.txtFamily.Name = "txtFamily";
+            this.txtFamily.Size = new System.Drawing.Size(62, 20);
+            this.txtFamily.TabIndex = 6;
+            // 
+            // txtCaption
+            // 
+            this.txtCaption.Location = new System.Drawing.Point(77, 82);
+            this.txtCaption.Name = "txtCaption";
+            this.txtCaption.Size = new System.Drawing.Size(202, 20);
+            this.txtCaption.TabIndex = 5;
+            // 
+            // labelFamily
+            // 
+            this.labelFamily.BackColor = System.Drawing.Color.Transparent;
+            this.labelFamily.ImageAlign = System.Drawing.ContentAlignment.MiddleRight;
+            this.labelFamily.Location = new System.Drawing.Point(35, 49);
+            this.labelFamily.Name = "labelFamily";
+            this.labelFamily.Size = new System.Drawing.Size(36, 23);
+            this.labelFamily.TabIndex = 4;
+            this.labelFamily.Text = "Family";
+            this.labelFamily.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            // 
+            // labelCaption
+            // 
+            this.labelCaption.BackColor = System.Drawing.Color.Transparent;
+            this.labelCaption.ImageAlign = System.Drawing.ContentAlignment.MiddleRight;
+            this.labelCaption.Location = new System.Drawing.Point(16, 82);
+            this.labelCaption.Name = "labelCaption";
+            this.labelCaption.Size = new System.Drawing.Size(55, 23);
+            this.labelCaption.TabIndex = 3;
+            this.labelCaption.Text = "Caption";
+            this.labelCaption.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            // 
+            // txtName
+            // 
+            this.txtName.Cursor = System.Windows.Forms.Cursors.Default;
+            this.txtName.Location = new System.Drawing.Point(77, 21);
+            this.txtName.Name = "txtName";
+            this.txtName.Size = new System.Drawing.Size(202, 20);
+            this.txtName.TabIndex = 2;
+            this.txtName.TextChanged += new System.EventHandler(this.infoCPU);
+            // 
+            // labelName
+            // 
+            this.labelName.BackColor = System.Drawing.Color.Transparent;
+            this.labelName.ImageAlign = System.Drawing.ContentAlignment.MiddleRight;
+            this.labelName.Location = new System.Drawing.Point(35, 20);
+            this.labelName.Name = "labelName";
+            this.labelName.Size = new System.Drawing.Size(36, 21);
+            this.labelName.TabIndex = 1;
+            this.labelName.Text = "Name";
+            this.labelName.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            // 
+            // imageCPU
+            // 
+            this.imageCPU.ErrorImage = null;
+            this.imageCPU.InitialImage = null;
+            this.imageCPU.Location = new System.Drawing.Point(285, 22);
+            this.imageCPU.Name = "imageCPU";
+            this.imageCPU.Size = new System.Drawing.Size(114, 111);
+            this.imageCPU.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.imageCPU.TabIndex = 0;
+            this.imageCPU.TabStop = false;
+            this.imageCPU.WaitOnLoad = true;
+            // 
+            // tabMain
+            // 
+            this.tabMain.Controls.Add(this.tabCPU);
+            this.tabMain.Controls.Add(this.tabMainBoard);
+            this.tabMain.Controls.Add(this.tabGraphics);
+            this.tabMain.Controls.Add(this.tabAbout);
+            this.tabMain.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.tabMain.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.tabMain.Location = new System.Drawing.Point(0, 0);
+            this.tabMain.Name = "tabMain";
+            this.tabMain.SelectedIndex = 0;
+            this.tabMain.Size = new System.Drawing.Size(421, 252);
+            this.tabMain.TabIndex = 0;
             // 
             // label5
             // 
-            this.label5.AutoSize = true;
-            this.label5.Location = new System.Drawing.Point(164, 42);
+            this.label5.BackColor = System.Drawing.Color.Transparent;
+            this.label5.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label5.Location = new System.Drawing.Point(95, 76);
             this.label5.Name = "label5";
-            this.label5.Size = new System.Drawing.Size(58, 13);
-            this.label5.TabIndex = 0;
-            this.label5.Text = "Product by";
+            this.label5.Size = new System.Drawing.Size(234, 42);
+            this.label5.TabIndex = 8;
+            this.label5.Text = "Bùi Văn Trung - CN CNTT 01";
+            this.label5.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            // 
+            // label6
+            // 
+            this.label6.BackColor = System.Drawing.Color.Transparent;
+            this.label6.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label6.Location = new System.Drawing.Point(161, 164);
+            this.label6.Name = "label6";
+            this.label6.Size = new System.Drawing.Size(85, 21);
+            this.label6.TabIndex = 9;
+            this.label6.Text = "Version 1.0";
+            this.label6.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            // 
+            // label14
+            // 
+            this.label14.BackColor = System.Drawing.Color.Transparent;
+            this.label14.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label14.Location = new System.Drawing.Point(151, 44);
+            this.label14.Name = "label14";
+            this.label14.Size = new System.Drawing.Size(121, 32);
+            this.label14.TabIndex = 10;
+            this.label14.Text = "Produced By ";
+            this.label14.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
             // formMain
             // 
@@ -613,45 +675,53 @@
             this.Controls.Add(this.tabMain);
             this.Name = "formMain";
             this.Text = "CPU-T";
-            this.tabMain.ResumeLayout(false);
-            this.tabCPU.ResumeLayout(false);
-            this.groupProcessor.ResumeLayout(false);
-            this.groupProcessor.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.imageCPU)).EndInit();
+            this.tabAbout.ResumeLayout(false);
+            this.tabGraphics.ResumeLayout(false);
+            this.RAM.ResumeLayout(false);
+            this.RAM.PerformLayout();
+            this.groupMemory.ResumeLayout(false);
+            this.groupMemory.PerformLayout();
             this.tabMainBoard.ResumeLayout(false);
             this.groupBIOS.ResumeLayout(false);
             this.groupBIOS.PerformLayout();
             this.groupBaseBoard.ResumeLayout(false);
             this.groupBaseBoard.PerformLayout();
-            this.tabGraphics.ResumeLayout(false);
-            this.groupMemory.ResumeLayout(false);
-            this.groupMemory.PerformLayout();
-            this.tabAbout.ResumeLayout(false);
-            this.tabAbout.PerformLayout();
+            this.tabCPU.ResumeLayout(false);
+            this.groupProcessor.ResumeLayout(false);
+            this.groupProcessor.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.imageCPU)).EndInit();
+            this.tabMain.ResumeLayout(false);
             this.ResumeLayout(false);
 
         }
 
         #endregion
 
-        private System.Windows.Forms.TabControl tabMain;
-        private System.Windows.Forms.TabPage tabCPU;
-        private System.Windows.Forms.TabPage tabMainBoard;
-        private System.Windows.Forms.TabPage tabGraphics;
-        private System.Windows.Forms.TabPage tabUser;
-        private System.Windows.Forms.TabPage tabDataStorage;
-        private System.Windows.Forms.TabPage tabNetwork;
         private System.Windows.Forms.TabPage tabAbout;
+        private System.Windows.Forms.TabPage tabGraphics;
+        private System.Windows.Forms.GroupBox groupMemory;
+        private System.Windows.Forms.Label label2;
+        private System.Windows.Forms.TextBox txtDisksize;
+        private System.Windows.Forms.TabPage tabMainBoard;
+        private System.Windows.Forms.GroupBox groupBIOS;
+        private System.Windows.Forms.TextBox txtMinor;
+        private System.Windows.Forms.TextBox txtMajor;
+        private System.Windows.Forms.Label label11;
+        private System.Windows.Forms.Label label10;
+        private System.Windows.Forms.TextBox txtVersionBIOS;
+        private System.Windows.Forms.Label label9;
+        private System.Windows.Forms.TextBox txtManuBIOS;
+        private System.Windows.Forms.Label label8;
+        private System.Windows.Forms.GroupBox groupBaseBoard;
+        private System.Windows.Forms.TextBox txtVersionBase;
+        private System.Windows.Forms.Label label7;
+        private System.Windows.Forms.TextBox txtModel;
+        private System.Windows.Forms.TextBox txtManufacturer;
+        private System.Windows.Forms.Label label4;
+        private System.Windows.Forms.TabPage tabCPU;
         private System.Windows.Forms.GroupBox groupProcessor;
-        private System.Windows.Forms.Label labelFamily;
-        private System.Windows.Forms.Label labelCaption;
-        private System.Windows.Forms.TextBox txtName;
-        private System.Windows.Forms.Label labelName;
-        private System.Windows.Forms.PictureBox imageCPU;
-        private System.Windows.Forms.Label la;
-        private System.Windows.Forms.TextBox txtFamily;
-        private System.Windows.Forms.TextBox txtCaption;
-        private System.Windows.Forms.TextBox txtSysName;
+        private System.Windows.Forms.TextBox txtAssetTag;
+        private System.Windows.Forms.Label labelAssetTag;
         private System.Windows.Forms.TextBox txtRevision;
         private System.Windows.Forms.TextBox txtLevel;
         private System.Windows.Forms.TextBox txtThreadCount;
@@ -662,28 +732,26 @@
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.TextBox txtExtClock;
         private System.Windows.Forms.Label labelExtClock;
+        private System.Windows.Forms.TextBox txtSysName;
+        private System.Windows.Forms.Label la;
+        private System.Windows.Forms.TextBox txtFamily;
+        private System.Windows.Forms.TextBox txtCaption;
+        private System.Windows.Forms.Label labelFamily;
+        private System.Windows.Forms.Label labelCaption;
+        private System.Windows.Forms.TextBox txtName;
+        private System.Windows.Forms.Label labelName;
+        private System.Windows.Forms.PictureBox imageCPU;
+        private System.Windows.Forms.TabControl tabMain;
+        private System.Windows.Forms.GroupBox RAM;
+        private System.Windows.Forms.TextBox txtRam;
+        private System.Windows.Forms.Label labelRam;
+        private System.Windows.Forms.TextBox txtRamAvai;
+        private System.Windows.Forms.Label label13;
+        private System.Windows.Forms.Label label12;
+        private System.Windows.Forms.TextBox txtSpeed;
+        private System.Windows.Forms.Label label14;
         private System.Windows.Forms.Label label6;
         private System.Windows.Forms.Label label5;
-        private System.Windows.Forms.TextBox txtAssetTag;
-        private System.Windows.Forms.Label labelAssetTag;
-        private System.Windows.Forms.GroupBox groupMemory;
-        private System.Windows.Forms.GroupBox groupBIOS;
-        private System.Windows.Forms.GroupBox groupBaseBoard;
-        private System.Windows.Forms.TextBox txtVersionBase;
-        private System.Windows.Forms.Label label7;
-        private System.Windows.Forms.TextBox txtModel;
-        private System.Windows.Forms.TextBox txtManufacturer;
-        private System.Windows.Forms.Label label4;
-        private System.Windows.Forms.TextBox txtVersionBIOS;
-        private System.Windows.Forms.Label label9;
-        private System.Windows.Forms.TextBox txtManuBIOS;
-        private System.Windows.Forms.Label label8;
-        private System.Windows.Forms.Label label11;
-        private System.Windows.Forms.Label label10;
-        private System.Windows.Forms.TextBox txtMinor;
-        private System.Windows.Forms.TextBox txtMajor;
-        private System.Windows.Forms.TextBox txtCPUUsage;
-        private System.Windows.Forms.Label label2;
     }
 }
 
