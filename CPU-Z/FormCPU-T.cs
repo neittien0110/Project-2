@@ -24,7 +24,8 @@ namespace CPU_Z
             txtDisksize.Text = " ";
         }
 
-        private void GetInfo(string key, string syntax, TextBox txt) // Ham lay thong tin cua bo phan syntax va in ra o tuong ung
+        private void GetInfo(string key, string syntax, TextBox txt) 
+        // Ham lay thong tin cua bo phan syntax va in ra o tuong ung
         {
 
             ManagementObjectSearcher searcher = new ManagementObjectSearcher("root\\CIMV2", "SELECT * FROM " + key);
@@ -37,6 +38,7 @@ namespace CPU_Z
 
         private void infoCPU(object sender, EventArgs e)
         {
+            //In thong tin trong tab CPU
             GetInfo("Win32_Processor", "Name", txtName);
             GetInfo("Win32_Processor", "Family", txtFamily);
             GetInfo("Win32_Processor", "SystemName", txtSysName);
@@ -60,6 +62,7 @@ namespace CPU_Z
 
         private void infoMainBoard(object sender, EventArgs e)
         {
+            //In thong tin trong tab MainBoard
             GetInfo("Win32_BaseBoard", "Manufacturer", txtManufacturer);
             GetInfo("Win32_BaseBoard", "Product", txtModel);
             GetInfo("Win32_BaseBoard", "Version", txtVersionBase);
